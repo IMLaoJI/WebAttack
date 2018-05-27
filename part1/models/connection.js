@@ -1,10 +1,11 @@
-const mysql = require('mysql');
+//数据库连接
+const mysql = require('mysql2');
 exports.getConnection = function(){
 	let connection = mysql.createConnection({
 		host: 'localhost',
-		database: 'imooc_safety',
+		database: 'safety',
 		user: 'root',
-		password: 'root'
+		password:'111111'
 	});
 	connection.connect();
 	return connection;
